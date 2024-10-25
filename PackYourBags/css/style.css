@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Font Colors */
+h1, h2, h3, p {
+    color: #f5eeee; /* Default dark color */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and nav */
+    align-items: center; /* Vertically center items */
+    background: #333;
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding for more space */
+}
+
+/* Logo Styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Make sure it spans the full width */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.logo img {
+    height: 50px; /* Adjust height if necessary */
+    margin-left: 10px; /* Space between logo text and image */
+}
+
+/* Navigation Styles */
+nav {
+    margin-left: auto; /* Push the nav to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin */
+    display: flex; /* Use flexbox to align nav items horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Add space between links */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for clickable area */
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Destination Cards */
+.destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 30%; /* Makes the cards responsive */
+    min-width: 300px; /* Prevents them from becoming too small */
+}
+
+/* Additional Styles */
+h2 {
+    color: #333;
+}
+
+.booking {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.booking h3 {
+    margin: 0;
+}
+
+.booking p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+}
