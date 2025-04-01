@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hari Hara Sundaram S - Portfolio</title>
+  <!-- Link to our custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Optional: Load external fonts or icons (e.g., Google Fonts, FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Hari Hara Sundaram S</h1>
+    <p class="tagline">AI & Data Science | IoT & Robotics Innovator</p>
+    <div class="social-icons">
+      <a href="https://github.com/haransundar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/haransundar" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">View My Work</button>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Final-year B.Tech student specializing in AI-driven IoT systems and robotics. Passionate about solving real-world problems like traffic management and smart infrastructure. Let’s build the future of tech!
+      </p>
+      <div class="stats">
+        <div class="stat"><span>1+</span><p>Years Experience</p></div>
+        <div class="stat"><span>6</span><p>Projects</p></div>
+        <div class="stat"><span>8+</span><p>Certifications</p></div>
+      </div>
+    </div>
+    <div class="about-image">
+      <!-- Replace with your image or 3D avatar -->
+      <img src="/img.jpg" alt="AI Avatar">
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Example project card -->
+      <div class="project-card">
+        <img src="/img1.png" alt="AI Traffic Management">
+        <div class="card-content">
+          <h3>AI-Based Traffic Management</h3>
+          <p><strong>Tech Stack:</strong> Python, Computer Vision, IoT Sensors</p>
+          <p>Reduced traffic congestion by adaptive signal control using real-time data.</p>
+          <a href="https://github.com/haransundar/project1" target="_blank" class="card-btn">View Code</a>
+        </div>
+      </div>
+      <!-- You can duplicate similar cards for additional projects -->
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills">
+    <h2>Skills & Certifications</h2>
+    <div class="skill-bar">
+      <div class="skill-label">Python</div>
+      <div class="skill-progress"><span style="width:90%"></span></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-label">Java</div>
+      <div class="skill-progress"><span style="width:80%"></span></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-label">Machine Learning</div>
+      <div class="skill-progress"><span style="width:85%"></span></div>
+    </div>
+    <!-- Add additional skills as needed -->
+  </section>
+
+  <!-- EXPERIENCE & WORKSHOPS SECTION -->
+  <section class="experience">
+    <h2>Experience & Workshops</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Tarcin Robotics LLP</h3>
+        <p>Robotics & IoT Intern (Jun-Jul 2024) - Developed smart door lock systems using IoT.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Amphisoft</h3>
+        <p>Java Advanced Trainee (Feb 2024) - Built enterprise-level Java applications.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>HDLC Technologies</h3>
+        <p>Ethical Hacking Trainee (Aug 2023) - Learned penetration testing and cybersecurity basics.</p>
+      </div>
+      <!-- Add additional timeline items as needed -->
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-social">
+      <a href="mailto:haransundar536@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/haransundar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/haransundar" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Hari Hara Sundaram S. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
